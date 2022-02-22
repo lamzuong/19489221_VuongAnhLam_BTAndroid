@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Bai06</string>
+    <string-array name="array_member">
+        <item>Tèo</item>
+        <item>Tý</item>
+        <item>Bin</item>
+        <item>Bo</item>
+    </string-array>
+</resources>
