@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhập tên: "
+            android:background="#ADEFBA6C"/>
+        <EditText
+            android:id="@+id/editText_Ten"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Space
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/button_Nhap"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Nhập"
+            android:textAllCaps="false"
+            android:backgroundTint="#2A25292B"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textView_getValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="position: , value ="
+        android:background="@color/teal_700"/>
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
