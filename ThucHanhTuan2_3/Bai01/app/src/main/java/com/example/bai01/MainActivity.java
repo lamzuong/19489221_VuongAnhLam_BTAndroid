@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         btnXoa = findViewById(R.id.button_Remove);
         
         arrNV = new ArrayList<NhanVien>();
-        adapter = new MyArrayAdapter(this, arrNV, R.layout.my_item_layout);
+        adapter = new MyArrayAdapter(this, R.layout.my_item_layout, arrNV);
         lv_NV.setAdapter(adapter);
 
         btnNhap.setOnClickListener(new View.OnClickListener() {

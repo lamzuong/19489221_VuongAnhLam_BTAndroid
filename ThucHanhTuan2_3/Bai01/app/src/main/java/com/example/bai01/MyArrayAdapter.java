@@ -20,7 +20,7 @@ public class MyArrayAdapter extends ArrayAdapter<NhanVien> {
     ArrayList<NhanVien> myArray;
     int layoutID;
 
-    public MyArrayAdapter(Activity context, ArrayList<NhanVien> myArray, int layoutID) {
+    public MyArrayAdapter(Activity context, int layoutID, ArrayList<NhanVien> myArray) {
         super(context, layoutID, myArray);
         this.context = context;
         this.myArray = myArray;
