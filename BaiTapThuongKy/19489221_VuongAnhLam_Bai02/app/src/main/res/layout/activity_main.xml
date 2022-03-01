@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nhập thời gian (s):"
+            android:textSize="25dp"/>
+        <EditText
+            android:id="@+id/editText_Time"
+            android:inputType="number"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="40dp" />
+        <Button
+            android:id="@+id/button_BatDau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bắt đầu"
+            android:backgroundTint="#F44336"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+        <Button
+            android:id="@+id/button_TamDung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0059b3"
+            android:text="Tạm dừng"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+        <Button
+            android:id="@+id/button_TiepTuc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0059b3"
+            android:text="Tiếp tục"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+        <Button
+            android:id="@+id/button_BatDauLai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0059b3"
+            android:text="Bắt đầu lại"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+        <Button
+            android:id="@+id/button_RutBai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0059b3"
+            android:text="Rút bài"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+        <TextView
+            android:id="@+id/textView_Van"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="VÁN 1"
+            android:textSize="23dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00BCD4"
+            android:gravity="center"
+            android:text="MÁY TÍNH 1"
+            android:textSize="25dp"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/textView_KetQuaMay1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFEB3B"
+            android:gravity="center"
+            android:text="Kết quả:" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/b1fv" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/b1fv" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/b1fv" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView_KetQuaVan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#673AB7"
+            android:gravity="center"
+            android:text="Kết quả:"
+            android:textSize="20dp"
+            android:textColor="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/b1fv" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/b1fv" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/b1fv" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView_KetQuaMay2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFEB3B"
+            android:gravity="center"
+            android:text="Kết quả:" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00BCD4"
+            android:gravity="center"
+            android:text="MÁY TÍNH 2"
+            android:textSize="25dp"
+            android:textColor="@color/white"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textSize="15dp"/>
+        <TextView
+            android:id="@+id/textView_KetQuaCK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F44336"
+            android:gravity="center"
+            android:text="CHUNG CUỘC:"
+            android:textSize="28dp"
+            android:textColor="@color/white"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textSize="10dp"/>
+    </LinearLayout>
+</ScrollView>
