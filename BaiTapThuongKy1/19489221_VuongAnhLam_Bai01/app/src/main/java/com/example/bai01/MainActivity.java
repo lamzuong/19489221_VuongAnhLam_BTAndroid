@@ -126,7 +126,7 @@ public class MainActivity extends AppCompatActivity {
         if(banThang > mayThang) {
             ketQua = "BẠN CHIẾN THẮNG\n";
             ketQua += banThang + " THẮNG, "+ hoa + " HÒA, " + mayThang + " THUA";
-        } else if(banThang < mayThang){
+        } else if(banThang < mayThang) {
             ketQua = "MÁY CHIẾN THẮNG\n";
             ketQua += mayThang + " THẮNG, "+ hoa + " HÒA, " + banThang + " THUA";
         } else {
@@ -187,16 +187,16 @@ public class MainActivity extends AppCompatActivity {
     }
     //-----------------------------------
     private int[] lay6SoNgauNhien(int min, int max) {
-        int[] baSo = new int[6];
+        int[] sauSo = new int[6];
         int i = 0;
-        baSo[i++] = random(min, max);
+        sauSo[i++] = random(min, max);
         do {
             int k = random(min, max);
-            if(!kiemTraTrung(k, baSo)) {
-                baSo[i++] = k;
+            if(!kiemTraTrung(k, sauSo)) {
+                sauSo[i++] = k;
             }
         } while (i < 6);
-        return baSo;
+        return sauSo;
     }
     //-----------------------------------
     private boolean kiemTraTrung(int k, int[] arr) {
