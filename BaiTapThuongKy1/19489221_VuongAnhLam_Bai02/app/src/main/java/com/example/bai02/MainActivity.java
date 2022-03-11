@@ -4,6 +4,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
@@ -57,6 +58,8 @@ public class MainActivity extends AppCompatActivity {
         tvKQCK = findViewById(R.id.textView_KetQuaCK);
 
         EditText et_Time = findViewById(R.id.editText_Time);
+        et_Time.setSelection(et_Time.getText().length());
+
         btnBatDau = findViewById(R.id.button_BatDau);
         btnTamDung = findViewById(R.id.button_TamDung);
         btnTiepTuc = findViewById(R.id.button_TiepTuc);
@@ -75,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
                 String txtTime = et_Time.getText().toString();
                 if(!txtTime.matches("\\d+") || Integer.parseInt(txtTime) <= 0) {
                     AlertDialog.Builder builder = new AlertDialog.Builder(view.getContext());
-                    builder.setMessage("Vui nhập số lớn hơn 0 vào ô nhập liệu !!");
+                    builder.setMessage("Vui lòng nhập số lớn hơn 0 vào ô nhập liệu !!");
                     builder.setTitle("Thông báo");
                     builder.setPositiveButton("OK",
                             new DialogInterface.OnClickListener() {
@@ -98,6 +101,7 @@ public class MainActivity extends AppCompatActivity {
                         public void onFinish() {
                             et_Time.setText("Hết giờ");
                             et_Time.setFocusableInTouchMode(true);
+                            et_Time.setSelection(et_Time.getText().length());
                             btnBatDau.setVisibility(View.VISIBLE);
                             btnTiepTuc.setVisibility(View.GONE);
                             btnTamDung.setVisibility(View.GONE);
@@ -151,6 +155,7 @@ public class MainActivity extends AppCompatActivity {
                         btnTamDung.setVisibility(View.GONE);
                         btnBatDauLai.setVisibility(View.GONE);
                         tvKQCK.setVisibility(View.VISIBLE);
+                        et_Time.setSelection(et_Time.getText().length());
 
                         j = 1;
                         tvKQCK.setText("CHUNG CUỘC: " + ketQuaCK(may1Thang, may2Thang, hoa));
@@ -172,10 +177,17 @@ public class MainActivity extends AppCompatActivity {
                 countDownTimer.cancel();
                 et_Time.setText("0");
                 et_Time.setFocusableInTouchMode(true);
+                et_Time.setSelection(et_Time.getText().length());
                 tvKQVan.setText("Kết quả:");
                 tvKQMay1.setText("Kết quả:");
                 tvKQMay2.setText("Kết quả:");
-                tvVan.setText("VÁN 1:");
+                tvVan.setText("VÁN 1");
+                iv1.setImageResource(R.drawable.b1fv);
+                iv2.setImageResource(R.drawable.b1fv);
+                iv3.setImageResource(R.drawable.b1fv);
+                iv4.setImageResource(R.drawable.b1fv);
+                iv5.setImageResource(R.drawable.b1fv);
+                iv6.setImageResource(R.drawable.b1fv);
                 btnBatDau.setVisibility(View.VISIBLE);
                 btnTiepTuc.setVisibility(View.GONE);
                 btnTamDung.setVisibility(View.GONE);
