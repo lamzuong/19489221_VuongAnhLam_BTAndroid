@@ -38,8 +38,9 @@ public class MainActivity extends AppCompatActivity {
         bt_Nhap = findViewById(R.id.button_Nhap);
         lv_SP = findViewById(R.id.listView_SP);
 
-        adapterSpinner = new ArrayAdapter<Catalog>(this, android.R.layout.simple_spinner_item, arraySpinner);
-        adapterSpinner.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+//        adapterSpinner = new ArrayAdapter<Catalog>(this, android.R.layout.simple_spinner_item, arraySpinner);
+//        adapterSpinner.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        adapterSpinner = new ArrayAdapter<Catalog>(this, android.R.layout.simple_list_item_1, arraySpinner);
         spn_danhMuc.setAdapter(adapterSpinner);
 
         adapterListview = new ArrayAdapter<Product>(this, android.R.layout.simple_list_item_1, arrayListview);

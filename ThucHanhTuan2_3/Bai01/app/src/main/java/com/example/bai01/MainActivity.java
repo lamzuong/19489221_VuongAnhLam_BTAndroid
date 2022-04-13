@@ -8,6 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.RadioGroup;
 
@@ -20,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private RadioGroup rad_Group;
     private ListView lv_NV;
     private Button btnNhap;
-    private Button btnXoa;
+    private ImageButton btnXoa;
     private ArrayList<NhanVien> arrNV;
     private MyArrayAdapter adapter;
 

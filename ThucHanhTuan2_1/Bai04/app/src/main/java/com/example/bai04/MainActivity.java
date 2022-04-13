@@ -49,19 +49,19 @@ public class MainActivity extends AppCompatActivity {
                     toast.show();
                 }
                 else {
-                    if(rad_CD.isChecked()) bangCap = "Cao đẳng";
-                    if(rad_DH.isChecked()) bangCap = "Đại học";
-                    if(rad_TC.isChecked()) bangCap = "Trung cấp";
+                    if(rad_CD.isChecked()) bangCap = rad_CD.getText().toString();
+                    if(rad_DH.isChecked()) bangCap = rad_DH.getText().toString();
+                    if(rad_TC.isChecked()) bangCap = rad_TC.getText().toString();
                     if(ckb_DB.isChecked()) {
-                        soThich += "Đọc báo ";
+                        soThich += ckb_DB.getText().toString() + " ";
                         i++;
                     }
                     if(ckb_DS.isChecked()) {
-                        soThich += "Đọc sách ";
+                        soThich += ckb_DS.getText().toString() + " ";
                         i++;
                     }
                     if(ckb_DC.isChecked()) {
-                        soThich += "Đọc coding ";
+                        soThich += ckb_DC.getText().toString() + " ";
                         i++;
                     }
                     if(i < 1) {
